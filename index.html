@@ -5,7 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
     <title>Document</title>
   </head>
-  <body></body>
+
+  <body>
+    <div class="main">
+      <section class="side-logo-container">
+        <div class="logo-container">
+          <div class="logo-text">
+            <img class="logo" src="odin-lined.png" />
+            <h1>ODIN</h1>
+          </div>
+        </div>
+      </section>
+      <section class="main-container">
+        <div class="information-container">
+          <h2>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.<br />
+            Sign up <i>now</i> to get started.
+          </h2>
+          <h2>You <i>know</i> you want to.</h2>
+        </div>
+        <form class="create-account" novalidate>
+          <div class="input-container">
+            <h2>Let's do this!</h2>
+            <div class="inputs">
+              <div class="input-item">
+                <label name="first-name">FIRST NAME</label>
+                <input name="first-name" id="first-name" type="text" required />
+              </div>
+              <div class="input-item">
+                <label name="last-name">LAST NAME</label>
+                <input name="last-name" id="last-name" type="text" required />
+              </div>
+              <div class="input-item">
+                <label name="email">EMAIL</label>
+                <input name="email" id="email" type="email" required />
+              </div>
+              <div class="input-item">
+                <label name="phone-number">PHONE NUMBER</label>
+                <input
+                  name="phone-number"
+                  id="phone-number"
+                  type="tel"
+                  required
+                />
+              </div>
+              <div class="input-item">
+                <label name="password">PASSWORD</label>
+                <input name="password" id="password" type="password" required />
+                <p class="error-message">* Passwords do not match</p>
+              </div>
+              <div class="input-item">
+                <label name="confirm-password">CONFIRM PASSWORD</label>
+                <input
+                  name="confirm-password"
+                  id="confirm-password"
+                  type="password"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button type="submit" class="submit-btn">Create Account</button>
+            <span
+              ><p>Already have an account? <a href="index.html">Log in</a></p>
+            </span>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
 </html>
