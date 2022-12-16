@@ -17,10 +17,7 @@ confirmPasswordField.addEventListener("input", function (e) {
 });
 
 function comparePasswords() {
-  if (
-    passwordField.value !== confirmPasswordField.value ||
-    !passwordField.value
-  ) {
+  if (passwordField.value !== confirmPasswordField.value) {
     passwordField.classList.add("error");
     confirmPasswordField.classList.add("error");
     errorMessage.style.display = "block";
